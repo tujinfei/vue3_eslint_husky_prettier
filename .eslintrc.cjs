@@ -1,5 +1,4 @@
 // @see: http://eslint.cn
-
 module.exports = {
   root: true,
   env: {
@@ -24,7 +23,7 @@ module.exports = {
     "plugin:vue/vue3-recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "plugin:prettier/recommended",
+    "eslint:recommended",
   ],
   /*
    * "off" 或 0    ==>  关闭规则
@@ -32,6 +31,7 @@ module.exports = {
    * "error" 或 2  ==>  规则作为一个错误（代码不能执行，界面报错）
    */
   rules: {
+
     // eslint (http://eslint.cn/docs/rules)
     "no-var": "error", // 要求使用 let 或 const 而不是 var
     "no-multiple-empty-lines": ["error", { max: 1 }], // 不允许多个空行
@@ -71,8 +71,6 @@ module.exports = {
     "vue/multi-word-component-names": "off", // 要求组件名称始终为 “-” 链接的单词
   },
 };
-
-
 
 // /* eslint-env node */
 // require('@rushstack/eslint-patch/modern-module-resolution')
